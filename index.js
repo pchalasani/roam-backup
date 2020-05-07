@@ -40,7 +40,8 @@ const generateExport = async () => {
     console.log("Successfully logged in");
 
     await page.waitForSelector(
-      ".flex-h-box > div > .bp3-popover-wrapper > .bp3-popover-target > .bp3-small"
+      ".flex-h-box > div > .bp3-popover-wrapper > .bp3-popover-target > .bp3-small",
+      {timeout: 300000}
     );
     await page.click(
       ".flex-h-box > div > .bp3-popover-wrapper > .bp3-popover-target > .bp3-small"
