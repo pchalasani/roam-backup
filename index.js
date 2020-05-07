@@ -35,7 +35,7 @@ const generateExport = async () => {
 
     await page.$eval(".bp3-button", el => el.click());
 
-    await page.waitFor(5000);
+    await page.waitFor(50000);
 
     console.log("Successfully logged in");
 
@@ -82,7 +82,7 @@ const generateExport = async () => {
 
     console.log("Created export");
 
-    console.log("Waiting five seconds for it to download");
+    console.log("Waiting fifty seconds for it to download");
     await page.waitFor(50000);
   } catch (err) {
     console.error("Something went wrong!");
